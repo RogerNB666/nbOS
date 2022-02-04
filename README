@@ -1,0 +1,24 @@
+BLFS -- A minimal operating system with GUI based on Linux.
+
+Compiling
+
+Compiling the bootloader requires x86_64-pe-BINUTILS.
+
+This system is based on Linux 5.13.12. You should download the
+Linux 5.13.12 packet to src directory and unpack it, then 
+switch to directory src and run the file build_linux.sh to
+compile the Linux kernel.
+
+# cd src
+# ./build_linux.sh
+
+After it finishes compiling, switch back to root directory of source.
+
+# cd ..
+
+Then enter "make".
+
+# make
+
+When the message "./install/install.img is ready." is printed, you can
+write the file install/install.img to your USB drive.
